@@ -2,10 +2,9 @@
 
 from aws_cdk import core
 
-from batch_stack.batch_stack_stack import BatchStackStack
-
+from batch_stack.fetch_and_run import FetchAndRunStack
 
 app = core.App()
-BatchStackStack(app, "batch-stack")
+FetchAndRunStack(app, "fetch-and-run-stack")
 
 app.synth()
